@@ -1,0 +1,102 @@
+/* Set video background */
+.video-background-holder {
+  position: relative;
+  background-color: black;
+  height: calc(100vh - 72px);
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* Set hire me button */
+.btn-lg.round {
+  border-radius: 24px;
+  font-size: 1.6em;
+  background-color: #EA7465;
+  border-color: #EA7465;
+  color: white;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 3%;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: linear;
+}
+
+.btn-lg.round:hover {
+  background-color: white;
+  border-color: #EA7465;
+  color: #EA7465;
+  transform: scale(1.1);
+}
+
+.col.title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contentSection {
+  background-color: white;
+  text-align: center;
+  box-shadow: 0px 10px 20px grey;
+}
+
+.contentSectionAlternative {
+  background-color: #fff9f8;
+  box-shadow: 0px 10px 20px grey;
+}
+
+figcaption {
+  margin-top: 3%;
+  font-size: 1.4em;
+}
+
+figure {
+  text-align: center;
+}
+
+figure p {
+  text-align: justify;
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+
+#connectSection {
+  margin-top: 2%;
+}
+
+#connectSection img:hover {
+  opacity: 0.8;
+  transform: scale(1.3);
+}
